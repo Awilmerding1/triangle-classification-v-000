@@ -14,10 +14,12 @@ class Triangle
  end
  
  def kind 
-   if self.sides.uniq.count
+   if self.sides.uniq.count == 1
      self.kind = :equilateral
-     elsif self.
+     elsif self.sides.uniq.count == 2
      self.kind = :isosceles
+     elsif self.sides.uniq.count == 3
+     self.kind = :scalene
    end
  end
  
