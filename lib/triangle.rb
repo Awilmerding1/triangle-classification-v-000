@@ -8,11 +8,10 @@ class Triangle
    @length_three = length_three
  end
  
- def equilateral
-   
- end
- 
  def kind 
+   if self.length_one == self.length_two && self.length_one == self.length_three
+     self.kind = :equilateral
+   end
  end
  
 end
