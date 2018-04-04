@@ -21,8 +21,7 @@ class Triangle
      raise TriangleError
    elsif self.sides.sort[0] > self.sides.sort[1]+self.sides.sort[2]
       raise TriangleError
-    end
-    if self.sides.uniq.count == 1 
+    elsif self.sides.uniq.count == 1 
      self.kind = :equilateral
      elsif self.sides.uniq.count == 2
      self.kind = :isosceles
