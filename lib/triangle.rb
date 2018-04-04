@@ -9,7 +9,7 @@ class Triangle
    @sides = []
  end
  
- 
+ def sides
  
  def kind 
    if self.length_one == self.length_two && self.length_one == self.length_three
