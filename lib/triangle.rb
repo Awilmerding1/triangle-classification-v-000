@@ -19,9 +19,7 @@ class Triangle
      raise TriangleError
      elsif self.sides.any?(&:negative?) == true
      raise TriangleError
-   end 
-    sorted = self.sides.sort
-    if sorted[0] > sorted[1]+sorted[2]
+   elsif self.sides.sort[0] > self.sides.sort[1]+self.sides.sort[2]
       raise TriangleError
     end
     if self.sides.uniq.count == 1 
