@@ -18,8 +18,10 @@ class Triangle
      raise TriangleError
      elsif self.sides.any?(&:negative?) == true
      raise TriangleError
-     elsif self.sides
-    elsif self.sides.uniq.count == 1 
+   end 
+    sorted = self.sides.sort
+   
+    if self.sides.uniq.count == 1 
      self.kind = :equilateral
      elsif self.sides.uniq.count == 2
      self.kind = :isosceles
