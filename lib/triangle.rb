@@ -22,6 +22,7 @@ class Triangle
      self.kind = :scalene
      elsif self.sides.include?(0)
      raise TriangleError
+     elsif self.sides.includ
     end
  end
  
