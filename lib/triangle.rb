@@ -8,6 +8,10 @@ class Triangle
    @length_three = length_three
  end
  
+ def equilateral
+   
+ end
+ 
  def kind 
  end
  
