@@ -20,8 +20,9 @@ class Triangle
      raise TriangleError
    end 
     sorted = self.sides.sort
-    if sorted[0]
-   
+    if sorted[0] > sorted[1]+sorted[2]
+      raise TriangleError
+    end
     if self.sides.uniq.count == 1 
      self.kind = :equilateral
      elsif self.sides.uniq.count == 2
