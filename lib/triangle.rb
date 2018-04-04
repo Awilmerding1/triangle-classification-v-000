@@ -14,8 +14,7 @@ class Triangle
  end
  
  def kind 
-   self.sides.map do |length|
-     length
+   if self.sides.uniq
      self.kind = :equilateral
      elsif self.
      self.kind = :isosceles
