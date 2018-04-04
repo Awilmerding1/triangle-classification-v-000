@@ -19,7 +19,7 @@ class Triangle
      raise TriangleError
      elsif self.sides.any?(&:negative?) == true
      raise TriangleError
-   elsif self.sides.sort![0] > self.sides.sort![1]+self.sides.sort![2]
+    elsif self.sides.sort[0] > self.sides.sort[1]+self.sides.sort[2]
       raise TriangleError
     elsif self.sides.uniq.count == 1 
      self.kind = :equilateral
