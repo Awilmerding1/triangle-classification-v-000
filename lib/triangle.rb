@@ -20,6 +20,7 @@ class Triangle
      raise TriangleError
    end 
     sorted = self.sides.sort
+    if sorted[0]
    
     if self.sides.uniq.count == 1 
      self.kind = :equilateral
