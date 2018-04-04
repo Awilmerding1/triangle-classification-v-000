@@ -11,6 +11,8 @@ class Triangle
  def kind 
    if self.length_one == self.length_two && self.length_one == self.length_three
      self.kind = :equilateral
+     elsif self.length_two == self.length_three && self.length_three != self.length_one
+     self.kind = :equilateral
    end
  end
  
