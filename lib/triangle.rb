@@ -6,11 +6,13 @@ class Triangle
   @length_one = length_one 
    @length_two = length_two 
    @length_three = length_three
-   @sides = []
+   @sides = [self.length_one, self.length_two, self.length_three]
  end
  
  def sides 
-   @sides << 
+   @sides
+ end
+ 
  
  def kind 
    if self.length_one == self.length_two && self.length_one == self.length_three
