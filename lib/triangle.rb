@@ -20,9 +20,8 @@ class Triangle
      self.kind = :isosceles
      elsif self.sides.uniq.count == 3
      self.kind = :scalene
-     elsif self.sides.include?(0)
+     elsif self.sides.
      raise TriangleError
-     elsif self.sides.includ
     end
  end
  
