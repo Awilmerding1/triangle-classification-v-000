@@ -1,4 +1,4 @@
-require "pry"
+
 class Triangle
   
   attr_accessor :length_one, :length_two, :length_three, :equilateral, :isosceles, :scalene, :kind
@@ -23,7 +23,6 @@ class Triangle
     sorted = self.sides.sort
     if sorted[0] > sorted[1]+sorted[2]
       raise TriangleError
-      binding.pry
     end
     if self.sides.uniq.count == 1 
      self.kind = :equilateral
