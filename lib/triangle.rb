@@ -2,7 +2,7 @@ class Triangle
   
   attr_accessor :length_one, :length_two, :length_three, :equilateral, :isosceles, :scalene, :kind
  
- def initialize(attributes)
+ def initialize(length_one, length_two, length_three )
   @length_one = length_one 
    @length_two = length_two 
    @length_three = length_three
