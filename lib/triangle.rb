@@ -16,7 +16,7 @@ class Triangle
  def kind 
     if self.sides.include?(0)
      raise TriangleError
-     elsif self.sides.any?(&:negative?)
+     elsif self.sides.any?(&:negative?) == true
      raise TriangleError
     elsif self.sides.uniq.count == 1 
      self.kind = :equilateral
