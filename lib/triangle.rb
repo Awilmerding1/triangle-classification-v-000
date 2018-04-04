@@ -14,7 +14,7 @@ class Triangle
  end
  
  def kind 
-   if self.sides.uniq
+   if self.sides.uniq.count
      self.kind = :equilateral
      elsif self.
      self.kind = :isosceles
