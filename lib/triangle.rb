@@ -6,7 +6,9 @@ class Triangle
   @length_one = length_one 
    @length_two = length_two 
    @length_three = length_three
+   @sides = []
  end
+ 
  
  
  def kind 
